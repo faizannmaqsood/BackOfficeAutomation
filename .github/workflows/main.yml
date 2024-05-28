@@ -32,6 +32,8 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Install dependencies
+        runfirst: mvn clean install
+
         run: mvn install -DskipTests
 
       - name: Run tests
