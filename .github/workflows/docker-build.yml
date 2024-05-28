@@ -1,0 +1,27 @@
+name: Java Docker Build and Run
+
+on:
+  push:
+    branches:
+      - main # Adjust branch name as needed
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Set up Docker
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      # Build the Docker image
+      - name: Build Docker image
+        run: docker build --file Dockerfile --tag your-docker-image-name:latest .
+
+      # Run the Docker container
+      - name: Run Docker container
+        run: docker run --rm your-docker-image-name:latest
