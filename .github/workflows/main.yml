@@ -31,9 +31,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Install dependencies
-        runfirst: mvn clean install
+      - name: clean maven
+        run: mvn clean install
 
+      - name: Install dependencies
         run: mvn install -DskipTests
 
       - name: Run tests
