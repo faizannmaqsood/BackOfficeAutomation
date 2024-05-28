@@ -53,8 +53,6 @@
 
   </dependencies>
 
-
-
   <build>
     <plugins>
       <plugin>
@@ -68,6 +66,9 @@
         </configuration>
       </plugin>
     </plugins>
+    <!-- Other build configurations -->
   </build>
+
+
 
 </project>
