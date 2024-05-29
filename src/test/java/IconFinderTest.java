@@ -11,7 +11,7 @@ public class IconFinderTest extends BaseTest {
         Response response = ApiUtilIconDetails.getIconDetails(Config.ICON_ID);
         String responseBody = response.getBody().asString();
 
-        assertTrue(responseBody.contains("\"icon_id\":182502"), "Icon ID should match");
+        assertTrue(responseBody.contains("\"icon_id\":182504"), "Icon ID should match");
     }
 
     @Test
