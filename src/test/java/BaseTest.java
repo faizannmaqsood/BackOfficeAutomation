@@ -10,9 +10,5 @@ public class BaseTest {
         RestAssured.baseURI = Config.BASE_URL;
     }
 
-    @Test
-    public void show(){
-        System.out.println("hello");
-    }
+
 }
-// known
