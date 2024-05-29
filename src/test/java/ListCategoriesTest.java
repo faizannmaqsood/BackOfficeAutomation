@@ -9,7 +9,7 @@ import static org.testng.Assert.*;
 import static org.testng.AssertJUnit.assertNotNull;
 
 
-public class ListCategories extends BaseTest {
+public class ListCategoriesTest extends BaseTest {
 
     @Test
     public void listCategories() {

@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
 
-public class IconFinder extends BaseTest {
+public class IconFinderTest extends BaseTest {
 
     @Test
     public void testIconId() {

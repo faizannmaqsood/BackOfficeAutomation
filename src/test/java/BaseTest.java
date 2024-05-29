@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class BaseTest {
 
     @BeforeClass
-    public static void setup() {
+    public void setup() {
         RestAssured.baseURI = Config.BASE_URL;
     }
 
