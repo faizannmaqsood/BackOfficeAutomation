@@ -4,6 +4,7 @@
         <classes>
             
             <class name="IconFinder" />
+            <class name="ListCategories" />
         </classes>
     </test>
 </suite>

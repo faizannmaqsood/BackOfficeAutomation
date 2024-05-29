@@ -3,7 +3,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public abstract class BaseTest {
+public class BaseTest {
 
     @BeforeClass
     public static void setup() {
