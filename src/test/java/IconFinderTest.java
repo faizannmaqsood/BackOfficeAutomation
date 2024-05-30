@@ -1,14 +1,17 @@
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
+
 import static org.testng.Assert.*;
 
 
 public class IconFinderTest extends BaseTest {
 
+    //ApiUtilIconDetails obj = new ApiUtilIconDetails();
+
     @Test
     public void testIconId() {
-        Response response = ApiUtilIconDetails.getIconDetails(Config.ICON_ID);
+        Response response =  ApiUtilIconDetails.getIconDetails(Config.ICON_ID);         //ApiUtilIconDetails.getIconDetails(Config.ICON_ID);
         String responseBody = response.getBody().asString();
 
         assertTrue(responseBody.contains("\"icon_id\":182504"), "Icon ID should match");
