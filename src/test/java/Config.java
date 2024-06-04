@@ -13,7 +13,7 @@ public class Config {
 
     public static final String ICON_ID = "182504";
 
-    public static final String ICON_NAME = "arrow";
+
 
 
 
