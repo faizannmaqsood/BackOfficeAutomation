@@ -23,9 +23,9 @@ README.md
 
 
 
-****Steps to Execute**
+**Steps to Execute**
 
-**Clone the repository:****
+**Clone the repository:**
 
 git clone https://github.com/faizannmaqsood/BackOfficeAutomation  
 Open the project in your IDE:
