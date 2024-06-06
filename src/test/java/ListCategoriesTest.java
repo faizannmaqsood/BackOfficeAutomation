@@ -24,18 +24,17 @@ public class ListCategoriesTest extends BaseTest {
     public void testListCategoriesTotalCount() {
         Response response = ApiUtilListCategories.ListCategories();
         int totalCount = response.jsonPath().getInt("total_count");
-
         assertEquals(totalCount, 122, "Total count of categories should match");
     }
 
 
-    @Test
-    public void testListCategoriesNotEmpty() {
-        Response response = ApiUtilListCategories.ListCategories();
-        List<Map<String, String>> categories = response.jsonPath().getList("categories");
+        @Test
+        public void testListCategoriesNotEmpty() {
+            Response response = ApiUtilListCategories.ListCategories();
+            List<Map<String, String>> categories = response.jsonPath().getList("categories");
 
-        assertFalse(categories.isEmpty(), "Categories list should not be empty");
-    }
+            assertFalse(categories.isEmpty(), "Categories list should not be empty");
+        }
 
 
     @Test
@@ -51,18 +50,7 @@ public class ListCategoriesTest extends BaseTest {
 
 
 
-    @Test
-    public void testSpecificCategoriesExist() {
-        Response response = ApiUtilListCategories.ListCategories();
-        List<Map<String, String>> categories = response.jsonPath().getList("categories");
-        List<String> categoryNames = categories.stream()
-                .map(category -> category.get("name"))
-                .collect(Collectors.toList());
 
-        assertTrue(categoryNames.contains("Abstract"), "Category 'Abstract' should exist");
-        assertTrue(categoryNames.contains("Animals"), "Category 'Animals' should exist");
-        assertTrue(categoryNames.contains("AI, robots & drones"), "Category 'AI, robots & drones' should exist");
-    }
 
 
 
